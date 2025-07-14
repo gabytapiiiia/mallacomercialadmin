@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva IC - Administración</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Ingeniería Comercial - Mención Administración</h1>
+  <div class="malla" id="malla">
+    <div class="licenciatura">
+  <h2>Licenciatura (Semestres I - VIII)</h2>
+
+  <div class="semestre">
+    <h3>Semestre I</h3>
+    <div class="curso" data-id="MAT1610">Cálculo I (MAT1610) - 10 CR</div>
+    <div class="curso" data-id="EAE1110">Introducción a la Microeconomía (EAE1110) - 10 CR</div>
+    <div class="curso" data-id="EAA1110">Comportamiento Organizacional (EAA1110) - 10 CR</div>
+    <div class="curso" data-id="EAA1210">Contabilidad (EAA1210) - 10 CR</div>
+    <div class="curso fg" data-id="FIL2001">Filosofía: ¿Para qué? (FIL2001) - 10 CR</div>
+  </div>
+
+  <div class="semestre">
+    <h3>Semestre II</h3>
+    <div class="curso" data-id="MAT1620" data-prereq="MAT1610">Cálculo II (MAT1620) - 10 CR</div>
+    <div class="curso" data-id="EAE1210" data-prereq="EAE1110">Introducción a la Macroeconomía (EAE1210) - 10 CR</div>
+    <div class="curso" data-id="EAA1510" data-prereq="MAT1620">Probabilidad y Estadística (EAA1510) - 10 CR</div>
+    <div class="curso" data-id="EAA1220" data-prereq="EAA1210">Fundamentos de Finanzas (EAA1220) - 10 CR</div>
+    <div class="curso fg">Formación General - 10 CR</div>
+  </div>
+
+  <div class="semestre">
+    <h3>Semestre III</h3>
+    <div class="curso" data-id="EAA1520" data-prereq="EAA1510">Inferencia Estadística (EAA1520) - 10 CR</div>
+    <div class="curso" data-id="EAF2010" data-prereq="MAT1620">Aplicaciones Matemáticas (EAF2010) - 10 CR</div>
+    <div class="curso" data-id="EAE1220" data-prereq="EAE1210">Análisis Económico: La Experiencia Chilena (EAE1220) - 10 CR</div>
+    <div class="curso" data-id="EAA2310" data-prereq="EAA1110,EAA1210">Fundamentos de Marketing (EAA2310) - 10 CR</div>
+    <div class="curso fg">Teológico - 10 CR</div>
+  </div>
+
+  <div class="semestre">
+    <h3>Semestre IV</h3>
+    <div class="curso" data-id="EAE2510" data-prereq="EAA1520">Econometría (EAE2510) - 10 CR</div>
+    <div class="curso" data-id="EAE2110" data-prereq="EAF2010">Microeconomía I (EAE2110) - 10 CR</div>
+    <div class="curso" data-id="EAE2210" data-prereq="EAE1220">Macroeconomía I (EAE2210) - 10 CR</div>
+    <div class="curso" data-id="EAA2410" data-prereq="EAA1220">Estrategia de la Organización (EAA2410) - 10 CR</div>
+    <div class="curso fg">Formación General - 10 CR</div>
+  </div>
+
+  <div class="semestre">
+    <h3>Semestre V</h3>
+    <div class="curso" data-id="EAE2120" data-prereq="EAE2110">Microeconomía II (EAE2120) - 10 CR</div>
+    <div class="curso" data-id="EAE2220" data-prereq="EAE2210,EAE2510">Macroeconomía II (EAE2220) - 10 CR</div>
+    <div class="curso" data-id="EAA2210" data-prereq="EAA2410,EAA1520,EAE2110">Teoría Financiera (EAA2210) - 10 CR</div>
+    <div class="curso" data-id="IIC1103">Introducción a la Programación (IIC1103) - 10 CR</div>
+    <div class="curso fg">Formación General - 10 CR</div>
+  </div>
+
+  <div class="semestre">
+    <h3>Semestre VI</h3>
+    <div class="curso" data-id="EAA2420" data-prereq="EAA2410">Estrategia Competitiva (EAA2420) - 10 CR</div>
+    <div class="curso" data-id="EAA2220" data-prereq="EAA2410">Contabilidad de Costos (EAA2220) - 5 CR</div>
+    <div class="curso" data-id="EAA2320" data-prereq="EAE2510,EAA2310">Marketing Analytics (EAA2320) - 10 CR</div>
+    <div class="curso" data-id="ETI209" data-prereq="EAA2410,EAE1220">Ética, Economía y Empresa (ETI209) - 10 CR</div>
+    <div class="curso fg">Formación General - 10 CR</div>
+  </div>
+
+  <div class="semestre">
+    <h3>Semestre VII</h3>
+    <div class="curso" data-id="EAA2230" data-prereq="EAA2410">Empresa y Legislación (EAA2230) - 5 CR</div>
+    <div class="curso" data-id="EAA2240" data-prereq="EAA2210,EAA2220">Contabilidad Gerencial (EAA2240) - 10 CR</div>
+    <div class="curso" data-id="EAA2110" data-prereq="EAA1110,FIL2001">Dirección de Personas (EAA2110) - 10 CR</div>
+    <div class="curso fg">Formación General - 10 CR</div>
+    <div class="curso">Curso Minor / Optativo - 10 CR</div>
+  </div>
+
+  <div class="semestre">
+    <h3>Semestre VIII</h3>
+    <div class="curso" data-id="EAF2500" data-prereq="EAE2120,EAE2210,EAA2310">Práctica Social (EAF2500) - 10 CR</div>
+    <div class="curso fg">Formación General - 10 CR</div>
+    <div class="curso">Curso Minor / Optativo - 10 CR</div>
+    <div class="curso">Curso Minor / Optativo - 10 CR</div>
+  </div>
+</div>
+
+<div class="mencion">
+  <h2>Mención Administración (Semestres IX - X)</h2>
+
+  <div class="semestre">
+    <h3>Semestre IX</h3>
+    <div class="curso" data-id="EAA3401" data-prereq="EAA2110,EAA2240,EAA2320">Dirección de Empresas y Estrategia (EAA3401) - 10 CR</div>
+    <div class="curso" data-id="EAA3201" data-prereq="EAA2240">Dirección Financiera (EAA3201) - 10 CR</div>
+    <div class="curso" data-id="EAA3501" data-prereq="EAE2510,EAA2420">Gestión de Operaciones (EAA3501) - 10 CR</div>
+    <div class="curso">Optativo de Profundización - 10 CR</div>
+    <div class="curso">Optativo de Profundización - 10 CR</div>
+  </div>
+
+  <div class="semestre">
+    <h3>Semestre X</h3>
+    <div class="curso" data-id="EAA3601" data-prereq="EAA3401,EAA3201,EAA2420">Creación de Nuevas Empresas (EAA3601) - 10 CR</div>
+    <div class="curso" data-id="EAA3101" data-prereq="EAA2110,EAA3401">Liderazgo Estratégico (EAA3101) - 5 CR</div>
+    <div class="curso" data-id="EAA3500" data-prereq="EAF2500,EAA3601">Práctica Profesional (EAA3500) - 15 CR</div>
+    <div class="curso">Optativo de Profundización - 10 CR</div>
+  </div>
+</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
