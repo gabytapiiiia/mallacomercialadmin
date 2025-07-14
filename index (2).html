@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Interactiva IC - Administración</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Ingeniería Comercial - Mención Administración</h1>
+  <div class="malla-horizontal">
+<div class="malla-horizontal">
+  <div class="semestre"><h3>Semestre I</h3>
+    <div class="curso" data-id="MAT1610" data-abre="MAT1620">Cálculo I (MAT1610)</div>
+    <div class="curso" data-id="EAA1110" data-abre="EAA2310">Comportamiento Organizacional (EAA1110)</div>
+    <div class="curso" data-id="EAA1210" data-abre="EAA1220,EAA2310">Contabilidad (EAA1210)</div>
+    <div class="curso" data-id="EAE1110" data-abre="EAE1210">Intro a Microeconomía (EAE1110)</div>
+  </div>
+  <div class="semestre"><h3>Semestre II</h3>
+    <div class="curso" data-id="MAT1620" data-prereq="MAT1610" data-abre="EAF2010">Cálculo II (MAT1620)</div>
+    <div class="curso" data-id="EAA1510" data-prereq="MAT1620" data-abre="EAA1220,EAA1520">Probabilidad y Estadística (EAA1510)</div>
+    <div class="curso" data-id="EAA1500" data-abre="EAA1520,EAF2010">Intro a Álgebra Lineal (EAA1500)</div>
+    <div class="curso" data-id="EAE1210" data-prereq="EAE1110" data-abre="EAE1220">Intro a Macroeconomía (EAE1210)</div>
+    <div class="curso fg" data-id="FIL2001">Filosofía: ¿Para qué? (FIL2001)</div>
+  </div>
+  <div class="semestre"><h3>Semestre III</h3>
+    <div class="curso" data-id="EAA1520" data-prereq="EAA1510" data-abre="EAE2510">Inferencia Estadística (EAA1520)</div>
+    <div class="curso" data-id="EAF2010" data-prereq="EAA1510,MAT1620" data-abre="EAE2110">Aplicaciones Matemáticas (EAF2010)</div>
+    <div class="curso" data-id="EAE1220" data-prereq="EAE1210" data-abre="EAE2110,EAE2210">Análisis Económico (EAE1220)</div>
+    <div class="curso" data-id="EAA1220" data-prereq="EAA1510" data-abre="EAA2410">Fundamentos de Finanzas (EAA1220)</div>
+    <div class="curso fg">Teológico</div>
+  </div>
+  <div class="semestre"><h3>Semestre IV</h3>
+    <div class="curso" data-id="EAE2510" data-prereq="EAA1520">Econometría (EAE2510)</div>
+    <div class="curso" data-id="EAE2110" data-prereq="EAF2010" data-abre="EAE2120">Microeconomía I (EAE2110)</div>
+    <div class="curso" data-id="EAA2410" data-prereq="EAE1110,EAA1220">Estrategia de la Organización (EAA2410)</div>
+    <div class="curso" data-id="EAA2310" data-prereq="EAA1510,EAA1110,EAA1210">Fundamentos de Marketing (EAA2310)</div>
+    <div class="curso fg">Formación General</div>
+  </div>
+  <div class="semestre"><h3>Semestre V</h3>
+    <div class="curso" data-id="IIC1103">Intro a Programación (IIC1103)</div>
+    <div class="curso" data-id="EAE2120" data-prereq="EAE2110" data-abre="EAA2420">Microeconomía II (EAE2120)</div>
+    <div class="curso" data-id="EAE2210" data-prereq="EAE1220,EAE2510" data-abre="EAE2220">Macroeconomía I (EAE2210)</div>
+    <div class="curso" data-id="EAA2210" data-prereq="EAA2410,EAA1520,EAE2110,IIC1103">Teoría Financiera (EAA2210)</div>
+    <div class="curso fg">Formación General</div>
+  </div>
+</div>
+
+    <!-- Aquí se insertarán los semestres dinámicamente -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
