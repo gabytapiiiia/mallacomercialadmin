@@ -4,6 +4,7 @@ body {
   color: #880e4f;
   margin: 0;
   padding: 20px;
+  overflow-x: auto;
 }
 
 h1 {
@@ -11,11 +12,13 @@ h1 {
   color: #ad1457;
 }
 
-.malla {
+.malla-horizontal {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 20px;
-  justify-content: center;
+  padding: 20px;
+  overflow-x: auto;
 }
 
 .semestre {
@@ -23,13 +26,13 @@ h1 {
   border: 2px solid #f8bbd0;
   border-radius: 12px;
   padding: 15px;
-  width: 260px;
+  min-width: 220px;
   box-shadow: 2px 2px 8px #f8bbd0a0;
 }
 
-.semestre h2 {
+.semestre h3 {
   color: #c2185b;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
   text-align: center;
 }
@@ -57,5 +60,11 @@ h1 {
 
 .curso.unlocked {
   background-color: #f50057;
+  font-weight: bold;
+}
+
+.curso.fg {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
   font-weight: bold;
 }
